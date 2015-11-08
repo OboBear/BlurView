@@ -15,6 +15,7 @@
 		167C7ACD1BEE343B00505623 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167C7ACB1BEE343B00505623 /* LaunchScreen.storyboard */; };
 		167C7AD81BEE343B00505623 /* OboBlurViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167C7AD71BEE343B00505623 /* OboBlurViewTests.m */; };
 		167C7AE31BEE343B00505623 /* OboBlurViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 167C7AE21BEE343B00505623 /* OboBlurViewUITests.m */; };
+		167C7AF21BEEE38C00505623 /* originalImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 167C7AF11BEEE38C00505623 /* originalImage.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		167C7ADE1BEE343B00505623 /* OboBlurViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OboBlurViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167C7AE21BEE343B00505623 /* OboBlurViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OboBlurViewUITests.m; sourceTree = "<group>"; };
 		167C7AE41BEE343B00505623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167C7AF11BEEE38C00505623 /* originalImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = originalImage.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		167C7ABC1BEE343B00505623 /* OboBlurView */ = {
 			isa = PBXGroup;
 			children = (
+				167C7AF01BEEE38C00505623 /* Image */,
 				167C7AC01BEE343B00505623 /* AppDelegate.h */,
 				167C7AC11BEE343B00505623 /* AppDelegate.m */,
 				167C7AC31BEE343B00505623 /* ViewController.h */,
@@ -138,6 +141,14 @@
 				167C7AE41BEE343B00505623 /* Info.plist */,
 			);
 			path = OboBlurViewUITests;
+			sourceTree = "<group>";
+		};
+		167C7AF01BEEE38C00505623 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				167C7AF11BEEE38C00505623 /* originalImage.jpg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				167C7AF21BEEE38C00505623 /* originalImage.jpg in Resources */,
 				167C7ACD1BEE343B00505623 /* LaunchScreen.storyboard in Resources */,
 				167C7ACA1BEE343B00505623 /* Assets.xcassets in Resources */,
 				167C7AC81BEE343B00505623 /* Main.storyboard in Resources */,
@@ -496,6 +508,7 @@
 				167C7AE91BEE343B00505623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		167C7AEA1BEE343B00505623 /* Build configuration list for PBXNativeTarget "OboBlurViewTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				167C7AEC1BEE343B00505623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		167C7AED1BEE343B00505623 /* Build configuration list for PBXNativeTarget "OboBlurViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				167C7AEF1BEE343B00505623 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

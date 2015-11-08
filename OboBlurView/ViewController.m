@@ -17,12 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"originalImage.jpg"]];
+    [self.view addSubview:imageView];
+    imageView.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
     
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    UIVisualEffectView *visualEffectView = [[UIVisualEffectView alloc]initWithFrame:CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.frame.size.width/2, imageView.frame.size.height/2)];
+    [visualEffectView setEffect:blurEffect];
+    [self.view addSubview:visualEffectView];
+    
+    
+    [UIView animateWithDuration:5 animations:^{
+        
+        visualEffectView.center = CGPointMake(imageView.frame.origin.x+imageView.frame.size.width, imageView.frame.origin.y+imageView.frame.size.height);
+    }];
+    
+                              
 }
 
 @end
